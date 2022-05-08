@@ -1,0 +1,14 @@
+.all-header{
+    margin-top: 3%;
+}
+.myfoto {
+    display: table;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+#email-info{
+    margin-top: 20px;
+    text-align: center;
+}

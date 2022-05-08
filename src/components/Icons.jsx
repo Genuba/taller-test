@@ -10,29 +10,34 @@ import {
 } from "react-icons/fa";
 
 const UserDescription = (props) => {
-  const handleChange = (e) => {
-    props.handleChange(e);
+  const handleChange = (e, key) => {
+    e.preventDefault();
+    props.handleChange(key);
   };
 
   return (
     <div id="details">
       <div className="flex2">
-        <a name="name" onClick={() => handleChange("name")}>
+        <a href="./" name="name" onClick={(e) => handleChange(e, "name")}>
           <FaUserAlt size={40} />
         </a>
-        <a name="email" onClick={() => handleChange("email")}>
+        <a href="./" name="email" onClick={(e) => handleChange(e, "email")}>
           <FaEnvelope size={40} />
         </a>
-        <a name="birth" onClick={() => handleChange("dob")}>
+        <a href="./" name="birth" onClick={(e) => handleChange(e, "dob")}>
           <FaClipboardList size={40} />
         </a>
-        <a name="address" onClick={() => handleChange("location")}>
+        <a
+          href="./"
+          name="address"
+          onClick={(e) => handleChange(e, "location")}
+        >
           <FaMapMarkerAlt size={40} />
         </a>
-        <a name="phone" onClick={() => handleChange("cell")}>
+        <a href="./" name="phone" onClick={(e) => handleChange(e, "cell")}>
           <FaPhoneAlt size={40} />
         </a>
-        <a name="password" onClick={() => handleChange("login")}>
+        <a href="./" name="password" onClick={(e) => handleChange(e, "login")}>
           <FaLock size={40} />
         </a>
       </div>
